@@ -270,7 +270,7 @@ h6 { font-size: 16px; }
 .grax_tm_topbar .logo .dark{display: none;}
 .grax_tm_topbar.animate .logo .dark{display: block;}
 .grax_tm_topbar.animate .logo .light{display: none;}
-.grax_tm_topbar .logo img{max-width: 100px;}
+.grax_tm_topbar .logo img{max-width: 50px;}
 .grax_tm_topbar .logo a{display: inline-block;}
 .grax_tm_topbar .menu ul{
 	margin: 0px;
@@ -310,7 +310,7 @@ h6 { font-size: 16px; }
 	height: auto;
 	float: left;
 	clear: both;
-	background-color: #fff;
+	background-color: #101010;
 	padding: 20px 0px;
 	border-bottom: 1px solid rgba(0,0,0,.2);
 }
