@@ -5572,3 +5572,16 @@
     S
   );
 });
+
+  window.addEventListener("scroll", function () {
+    const topbar = document.querySelector(".topbar_inner");
+    if (window.innerWidth <= 768) {
+      if (window.scrollY > 100) {
+        topbar.classList.add("show-on-scroll");
+      } else {
+        topbar.classList.remove("show-on-scroll");
+      }
+    }
+  });
+
+ 
