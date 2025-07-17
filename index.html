@@ -439,13 +439,13 @@
       <div class="project-grid">
         <!-- Card 1 -->
         <div class="project-card">
-          <img src="https://images.pexels.com/photos/32990121/pexels-photo-32990121.jpeg" alt="Keeper Notes App" />
+          <img src="./img/placeholders/Keeper app.jpeg" alt="Keeper Notes App" />
           <div class="card-body">
             <h4>Keeper Notes</h4>
-            <p>React • Google Keep Clone</p>
+            <p>ReactJS • Google Keep Clone </p>
             <div class="project-links">
               <a href="https://github.com/gyanasaireddy/Keeper-Project.git" target="_blank">GitHub</a>
-              <a href="#" target="_blank">Live Demo</a>
+              <a href="https://keeper-project-azure.vercel.app/" target="_blank">Live Demo</a>
             </div>
           </div>
         </div>
@@ -545,7 +545,7 @@
                 <div class="progress_inner" data-value="45">
                   <span
                     ><span class="label">Full Stack Open, University of Helsinki</span
-                    ><span class="number">85%</span></span
+                    ><span class="number">45%</span></span
                   >
                   <div class="background">
                     <div class="bar"><div class="bar_in"></div></div>
@@ -554,14 +554,14 @@
                  <div class="progress_inner" data-value="25">
                   <span
                     ><span class="label">CS50’s Introduction to Computer Science</span
-                    ><span class="number">2%</span></span
+                    ><span class="number">25%</span></span
                   >
                   <div class="background">
                     <div class="bar"><div class="bar_in"></div></div>
                   </div>
                 </div>
               </div>
-            </div>5
+            </div>
           </div>
         </div>
       </div>
@@ -595,6 +595,7 @@
             <h3>Get in <span>Touch</span></h3>
           </div>
           <div class="contact_inner">
+
             <div class="wow fadeInLeft" data-wow-duration="1s">
               <div class="info_list">
                 <ul>
@@ -614,7 +615,7 @@
                       <p>
                         <span class="first">Phone:</span
                         ><span class="second"
-                          ><a href="#">+91 824 722 4264</a></span
+                         id ="phoneNum" ><a href="javascript:void(0)">+91 824 722 4264  <img src="/img/placeholders/copy.png" style="filter: invert(1); width: 10px; margin-right: 5px; "/></a></span
                         >
                       </p>
                     </div>
@@ -623,27 +624,39 @@
                     <div class="list_inner">
                       <img
                         class="svg"
-                        src="img/svg/social/dribbble.svg"
+                        src="img/svg/social/email.png"
                         alt=""
+                        style="filter: invert();"
                       />
                       <p>
                         <span class="first">Email:</span
                         ><span class="second"
-                          >gjnanasaireddy@gmail.com</span
+                         id ="emailid" >
+                          <a href="javascript:void(0)" >gjnanasaireddy@gmail.com <img src="/img/placeholders/copy.png" style="filter: invert(1); width: 10px; margin-right: 5px; "  alt=""></a></span
                         >
                       </p>
                     </div>
                   </li>
 
-                  <!--<li>
+                  <!-- <li>
 								<div class="list_inner">
 									<img class="svg" src="img/svg/social/facebook.svg" alt="" />
 									<p><span class="first">Facebook:</span><span class="second"><a href="#">@facebooknickname</a></span></p>
 								</div>
 							</li> -->
                 </ul>
+                
               </div>
+              
             </div>
+                        <label id="alert" class="fade-box">
+  <input type="checkbox" class="alertCheckbox wow fadeInLeft"  autocomplete="off" />
+  <div class="alert success" >
+    <span class="alertClose">X</span>
+    <span class="alertText">Text Copied to Clipboard
+		<br class="clear"/></span>
+  </div>
+</label>
           </div>
         </div>
       </div>
@@ -681,31 +694,29 @@
               >
                 <ul>
                   <li>
-                    <a href="#"
+                    <a href="https://www.linkedin.com/in/gyana-sai-reddy/" target="_blank"
                       ><img
                         class="svg"
-                        src="img/svg/social/facebook.svg"
+                        src="img/svg/social/Linkdin.png"
                         alt=""
+                        style="filter: invert();"
                     /></a>
                   </li>
                   <li>
-                    <a href="#"
-                      ><img class="svg" src="img/svg/social/twitter.svg" alt=""
+                    <a href="https://www.upwork.com/freelancers/~0128828120bbb4109f?s=1017484851352698949" target="_blank"
+                      ><img class="svg" src="img/svg/social/upwork.png" alt="" style="filter: invert();"
                     /></a>
                   </li>
                   <li>
-                    <a href="#"
+                    <a href="javascript:void(0)"
                       ><img
                         class="svg"
-                        src="img/svg/social/dribbble.svg"
+                        src="img/svg/social/fiverr.png"
                         alt=""
+                        style="filter: invert();"
                     /></a>
                   </li>
-                  <li>
-                    <a href="#"
-                      ><img class="svg" src="img/svg/social/tik-tok.svg" alt=""
-                    /></a>
-                  </li>
+          
                   <!-- You can download another svg icons from here for free https://www.flaticon.com -->
                 </ul>
               </div>
@@ -740,10 +751,10 @@
      <script>
         const time_yr = new Date();
   var copyr = "Gjnana Sai Reddy © " + time_yr.getFullYear();
-  console.log(copyr);
-    
-
-  document.getElementById('copyright_footer').innerText=((copyr))
+  // console.log(copyr);
+  
+  document.getElementById('copyright_footer').innerText=((copyr));
+// document.getElementsByClassName('second').addEventListner('click',()=> alert('he'))
      </script>
   </body>
 </html>

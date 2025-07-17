@@ -5573,15 +5573,29 @@
   );
 });
 
-  window.addEventListener("scroll", function () {
-    const topbar = document.querySelector(".topbar_inner");
-    if (window.innerWidth <= 768) {
-      if (window.scrollY > 100) {
-        topbar.classList.add("show-on-scroll");
-      } else {
-        topbar.classList.remove("show-on-scroll");
-      }
+window.addEventListener("scroll", function () {
+  const topbar = document.querySelector(".topbar_inner");
+  if (window.innerWidth <= 768) {
+    if (window.scrollY > 100) {
+      topbar.classList.add("show-on-scroll");
+    } else {
+      topbar.classList.remove("show-on-scroll");
     }
-  });
+  }
+});
 
- 
+document.getElementById("emailid").addEventListener("click", () => {
+  navigator.clipboard.writeText($("#emailid a").text());
+  document.getElementById("alert").classList.add("show");
+  setTimeout(() => {
+    document.getElementById("alert").classList.remove("show");
+  }, 3000);
+});
+document.getElementById("phoneNum").addEventListener("click", () => {
+  navigator.clipboard.writeText($("#phoneNum a").text());
+  document.getElementById("alert").classList.add("show");
+  setTimeout(() => {
+    document.getElementById("alert").classList.remove("show");
+  }, 3000);
+});
+
