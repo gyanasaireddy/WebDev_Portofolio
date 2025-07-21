@@ -484,41 +484,53 @@ h6 {
   transition: all 0.3s ease;
 }
 .grax_tm_mobile_menu .dropdown {
+  position: fixed;                      /* Makes it overlay the entire screen */
+  top: 60px;                            /* Adjust depending on navbar height */
+  left: 0;
   width: 100%;
   height: auto;
-  clear: both;
-  float: left;
   background-color: #101010;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  z-index: 9999;                        /* Ensures it stays above all content */
   display: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4); /* Optional: Adds some depth */
 }
+
 .grax_tm_mobile_menu .dropdown .dropdown_inner {
   width: 100%;
-  height: auto;
-  clear: both;
-  float: left;
-  padding: 25px 0px;
+  padding: 25px 20px;
 }
+
 .grax_tm_mobile_menu .dropdown .dropdown_inner ul {
-  margin: 0px;
-  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
+
 .grax_tm_mobile_menu .dropdown .dropdown_inner ul li {
-  margin: 0px;
-  float: left;
   width: 100%;
+  margin-bottom: 10px;
 }
+
 .grax_tm_mobile_menu .dropdown .dropdown_inner ul li a {
   text-decoration: none;
   color: #ffffff;
-  display: inline-block;
-  padding: 4px 0px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
+  display: block;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: color 0.2s ease;
 }
+
+.grax_tm_mobile_menu .dropdown .dropdown_inner ul li a:hover {
+  color: #ff4d5a;
+}
+
 .grax_tm_mobile_menu .logo img {
   max-width: 35px;
 }
+
 
 /*---------------------------------------------------*/
 /*	04) GRAX HERO
