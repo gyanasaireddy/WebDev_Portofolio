@@ -156,13 +156,12 @@
       <!-- HERO -->
       <div class="grax_tm_hero" id="home">
         <div class="bg">
-          <a
-            id="video"
-            class="youtube-bg"
-            data-property="{videoURL:'https://youtu.be/iU-ExGJPQ7A',containment:'#home', showControls:false, autoPlay:true, loop:true, mute:true, startAt:0, opacity:1, quality:'default'}"
-          ></a>
-          <div class="overlay"></div>
-        </div>
+  <video autoplay muted loop playsinline class="video-bg">
+    <source src="./img/about/Coding.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay"></div>
+</div>
         <div class="content">
           <div class="container">
             <div class="details" data-animation="toTop">
@@ -453,10 +452,10 @@
 
         <!-- Card 2 -->
         <div class="project-card">
-          <img src="https://images.pexels.com/photos/32990121/pexels-photo-32990121.jpeg" alt="Keeper Notes App" />
+          <img src="./img/placeholders/ResApp.jpeg" alt="Keeper Notes App" />
           <div class="card-body">
-            <h4>Keeper Notes</h4>
-            <p>React • Google Keep Clone</p>
+            <h4>Restaurant Website</h4>
+            <p>React • Google Firebase</p>
             <div class="project-links">
               <a href="https://github.com/gyanasaireddy/Keeper-Project.git" target="_blank">GitHub</a>
               <a href="#" target="_blank">Live Demo</a>
@@ -466,13 +465,13 @@
 
         <!-- Card 3 -->
         <div class="project-card">
-          <img src="https://images.pexels.com/photos/32990121/pexels-photo-32990121.jpeg" alt="Chat App" />
+          <img src="./img/placeholders/chat.png" alt="Chat App" />
           <div class="card-body">
             <h4>Chat App</h4>
             <p>Node.js • Express • Sessions</p>
             <div class="project-links">
               <a href="https://github.com/gyanasaireddy/Chat_Appilication" target="_blank">GitHub</a>
-              <a href="#" target="_blank">Live Demo</a>
+              <a href="javascript:void(0)"  >Live Demo</a>
             </div>
           </div>
         </div>
@@ -490,7 +489,8 @@
           </div>
         </div>
 
-          <div class="project-card">
+        <!-- card 5 -->
+          <!-- <div class="project-card">
           <img src="https://images.pexels.com/photos/32990121/pexels-photo-32990121.jpeg" alt="Book Notes App" />
           <div class="card-body">
             <h4>Book Notes</h4>
@@ -500,7 +500,7 @@
               <a href="#" target="_blank">Live Demo</a>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -526,7 +526,7 @@
               <div class="kioto_progress">
                 <div class="progress_inner" data-value="100">
                   <span
-                    ><span class="label">The Complete Node.js Developer Course</span
+                    ><span class="label" style="width: 75vw;">Node.js Developer Course, Udemy</span
                     ><span class="number">100%</span></span
                   >
                   <div class="background">
@@ -535,7 +535,7 @@
                 </div>
                 <div class="progress_inner" data-value="100">
                   <span
-                    ><span class="label">The Complete Full-Stack Web Development</span
+                    ><span class="label">Full-Stack Web Development,, Udemy</span
                     ><span class="number">100%</span></span
                   >
                   <div class="background">
@@ -734,7 +734,7 @@
 
       <!-- START: Page Progress -->
       <div class="progressbar">
-        <a href="#"><span class="text">To Top</span></a>
+        <a href="#"><span class="text" style="color: beige;">To Top</span></a>
         <span class="line"></span>
       </div>
       <!-- END: Page Progress -->
