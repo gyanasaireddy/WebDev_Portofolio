@@ -783,6 +783,34 @@ h6 {
 /*---------------------------------------------------*/
 /*	05) GRAX ABOUT
 /*---------------------------------------------------*/
+.grax_tm_list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.grax_tm_list li {
+  margin-bottom: 20px;
+  border-left: 3px solid var(--main-color, #ff0058);
+  padding-left: 15px;
+}
+
+.grax_tm_list h5 {
+  font-size: 1.2rem;
+  margin-bottom: 3px;
+}
+
+.grax_tm_list span {
+  display: block;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.grax_tm_list p {
+  margin: 5px 0 0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
 
 .grax_tm_about {
   width: 100%;
